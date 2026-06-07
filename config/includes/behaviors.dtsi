@@ -2,14 +2,38 @@
 
     behaviors {
 
-        sltht: smart_layer_tap_high_thumbs {
+        // BEHAVIOR LIST
+        // char layer - t: character, h: mo() , timings: thumbs extension
+        // smart layer - t: sticky layer, h: mo() (layer toggle on the targeted layer)
+        // sticky mod - t: sticky cmd, h: mod
+
+        lc_tp_ht:layer_char_tap_preferred_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&sl>, <&kp>;
-            display-name = "Smart Layer-Tap High Thumbs";
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&mo>;
+            display-name = "Layer/Char, Tap-preferred, Thumbs";
         };
+
+        lc_hpp_ht:layer_char_hold_preferred_positionnal_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&mo>;
+            hold-trigger-key-positions = <11 12 13 23 16 17 18 27 28 29>;
+            display-name = "Layer/Char, Hold-preferred, Thumbs";
+        };
+
+        // mod-morphs
+        // comma > semicolon (CM_SMC)
+        // period > colon (DOT_CLN)
+
+        // 1DK (from https://github.com/OneDeadKey/zmk-config-aekeynox)
+        //
 
     };
 };
