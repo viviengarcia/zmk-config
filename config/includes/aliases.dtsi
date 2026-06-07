@@ -69,9 +69,6 @@
 #define M_ RGUI
 #define CPS CAPS
 
-#define N_SQT &lt 1 SQT
-#define S_GRV &lt 1 GRV
-
 #define MPP C_PLAY_PAUSE
 #define M_P C_PREV // play previous track
 #define MP_ C_NEXT // play next track
