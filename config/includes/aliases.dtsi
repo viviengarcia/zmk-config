@@ -92,3 +92,18 @@
 #define EQL EQUAL
 
 #define SLP C_SLEEP
+
+// BEHAVIORS
+
+// #define N_SQT &lt 1 SQT
+// #define S_GRV &lt 1 GRV
+
+#define RPT &key_repeat
+
+#define TAB_SYS &lc_tp_ht 6 TAB // h: SYSTEM layer, t: TAB
+#define RPT_DVC &lc_tp_ht 7 RPT // h: DEVICE layer, t: &key_repeat
+
+#define NAV_SPC &lc_hpp_ht 3 SPC // h: NAVIGATION, t: Space
+
+#define OSL_DIA &sl 2
+#define OSK_LST &sk LSFT
