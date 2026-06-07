@@ -2,8 +2,8 @@
 #define XXX &none
 
 #define CM COMMA
-#define SMC SEMI
-#define COL COLON
+#define SMC SEMI // semicolon
+#define CLN COLON
 #define QST QUESTION
 #define XCL EXCLAMATION
 #define ELI LA(SEMI) // elipsis
