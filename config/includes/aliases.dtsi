@@ -93,6 +93,45 @@
 
 #define SLP C_SLEEP
 
+// DIACRITICS
+// Macros
+
+#define A_GRV &digraph GRV A // à
+#define SA_GRV &digraph GRV _S(A) // à
+#define A_CIR &digraph CAR A // â
+#define SA_CIR &digraph CAR _S(A) // â
+#define E_ACU &digraph SQT E // é
+#define SE_ACU &digraph SQT _S(E) // é
+#define E_GRV &digraph GRV E // è
+#define SE_GRV &digraph GRV _S(E) // è
+#define E_CIR &digraph CAR E // ê
+#define SE_CIR &digraph CAR _S(E) // ê
+#define E_TRM &digraph DQT E // ë
+#define SE_TRM &digraph DQT _S(E) // ë
+#define I_CIR &digraph CAR I // î
+#define SI_CIR &digraph CAR _S(I) // î
+#define I_TRM &digraph DQT I // ï
+#define SI_TRM &digraph DQT _S(I) // ï
+#define O_CIR &digraph CAR O // ô
+#define SO_CIR &digraph CAR _S(O) // ô
+#define O_TRM &digraph DQT O // ö
+#define SO_TRM &digraph DQT _S(O) // ö
+#define U_GRV &digraph GRV U // ù
+#define SU_GRV &digraph GRV _S(U) // ù
+#define U_CIR &digraph CAR U // û
+#define SU_CIR &digraph CAR _S(U) // û
+#define U_TRM &digraph DQT U // ü
+#define SU_TRM &digraph DQT _S(U) // ü
+#define Y_TRM &digraph DQT Y // ÿ
+#define SY_TRM &digraph DQT _S(Y) // ÿ
+#define C_CED &digraph _A(C) // ç
+#define SC_CED &digraph _A(_S(C)) // ç
+#define AE &digraph _A(SQT) // æ
+#define S_AE &digraph _A(_S(SQT)) // æ
+#define OE &digraph _A(Q) // œ
+#define S_OE &digraph _S(_A(Q)) // œ
+
+
 // BEHAVIORS
 
 // #define N_SQT &lt 1 SQT
