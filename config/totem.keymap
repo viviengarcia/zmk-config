@@ -16,9 +16,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "includes/aliases.dtsi"
+#include "includes/mappings.dtsi"
 #include "includes/behaviors.dtsi"
 #include "includes/combos.dtsi"
-#include "includes/mappings.dtsi"
 
 #define DFT 0
 #define SYM 1
