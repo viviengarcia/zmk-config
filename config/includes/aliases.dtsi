@@ -14,7 +14,7 @@
 #define DLR DOLLAR
 #define PCT PERCENT
 #define CRT CARET
-#define USC UNDERSCORE
+#define UND UNDERSCORE
 #define PIP PIPE
 #define GRV GRAVE
 #define TLD TILDE
@@ -106,4 +106,4 @@
 #define NAV_SPC &lc_hpp_ht 3 SPC // h: NAVIGATION, t: Space
 
 #define OSL_DIA &sl 2
-#define OSK_LST &sk LSFT
+#define OS_LSFT &sk LSFT
