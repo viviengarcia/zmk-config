@@ -7,7 +7,7 @@
         // smart layer - t: sticky layer, h: mo() (layer toggle on the targeted layer)
         // sticky mod - t: sticky cmd, h: mod
 
-        lc_tp_ht:layer_char_tap_preferred_hold_tap {
+        lc_tp_ht:layr_char_tp_ht { // layer/character, tap-preferred hold-tap
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -17,7 +17,7 @@
             display-name = "Layer/Char, Tap-preferred, Thumbs";
         };
 
-        lc_hpp_ht:layer_char_hold_preferred_positionnal_hold_tap {
+        lc_hpp_ht:layr_char_hpp_ht { // layer/character, positionnal, tap-preferred hold-tap
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
