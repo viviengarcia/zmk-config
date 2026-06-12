@@ -19,7 +19,7 @@
 #include "includes/aliases.dtsi"
 #include "includes/mappings.dtsi"
 #include "includes/behaviors.dtsi"
-#include "includes/macros.dtsi"
+// #include "includes/macros.dtsi"
 #include "includes/combos.dtsi"
 
 #define DFT 0
