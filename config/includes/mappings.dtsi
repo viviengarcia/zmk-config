@@ -58,7 +58,7 @@
     OMIT_IF_NO_REF ellipsis: ellipsis {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_tap S_DOT S_DOT S_DOT>;
+      bindings = <&macro_tap DOT DOT DOT>;
     };
 
     OMIT_IF_NO_REF caps: caps {
