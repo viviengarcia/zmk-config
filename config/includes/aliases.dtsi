@@ -89,7 +89,7 @@
 #define BT2 &bt BT_SEL 2
 #define BT3 &bt BT_SEL 3
 #define BT4 &bt BT_SEL 4
-#define EQL EQUAL
+// #define EQL EQUAL // possible doublon makes build crash
 
 #define SLP C_SLEEP
 
