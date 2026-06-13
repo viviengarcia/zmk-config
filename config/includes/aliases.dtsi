@@ -28,6 +28,8 @@
 #define BK_ RBKT
 #define _BC LBRC
 #define BC_ RBRC
+#define _FG _A(NBS) // left french guillemet
+#define FG_ _S(_A(NBS)) // right french guillemet
 
 #define K0 KP_N0
 #define K1 KP_N1
