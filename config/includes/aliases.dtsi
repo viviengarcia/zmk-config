@@ -28,8 +28,6 @@
 #define BK_ RBKT
 #define _BC LBRC
 #define BC_ RBRC
-#define _FG _A(NBS) // left french guillemet
-#define FG_ _S(_A(NBS)) // right french guillemet
 
 #define K0 KP_N0
 #define K1 KP_N1
@@ -95,8 +93,10 @@
 
 #define SLP &kp C_SLEEP
 
-// DIACRITICS
-// Macros
+// SYMBOLS & DIACRITICS
+//
+#define _FG _A(NBS) // left french guillemet
+#define FG_ _S(_A(NBS)) // right french guillemet
 
 #define A_GRV &digraph GRV A // ck_label="à"
 #define SA_GRV &digraph GRV _S(A) // ck_label="À"
