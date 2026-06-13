@@ -1,87 +1,87 @@
 #define ___ &trans
 #define XXX &none
 
-#define CM COMMA
-#define SMC SEMI // semicolon
-#define CLN COLON
-#define QST QUESTION
-#define XCL EXCLAMATION
-#define ELI LA(SEMI) // elipsis
-#define STR STAR
-#define MNS MINUS
-#define PLS PLUS
-#define HSH HASH
-#define DLR DOLLAR
-#define PCT PERCENT
-#define CRT CARET
-#define UND UNDERSCORE
-#define PIP PIPE
-#define GRV GRAVE
-#define TLD TILDE
-#define BSH BSLH
-#define BSP BSPC
-#define FSH FSLH // slash
-#define NBS NUBS // non-US backslash
-#define _PR LPAR
-#define PR_ RPAR
-#define _BK LBKT
-#define BK_ RBKT
-#define _BC LBRC
-#define BC_ RBRC
-#define _FG _A(NBS) // left french guillemet
-#define FG_ _S(_A(NBS)) // right french guillemet
+#define CM &kp COMMA
+#define SMC &kp SEMI // semicolon
+#define CLN &kp COLON
+#define QST &kp QUESTION
+#define XCL &kp EXCLAMATION
+#define ELI &kp LA(SEMI) // elipsis
+#define STR &kp STAR
+#define MNS &kp MINUS
+#define PLS &kp PLUS
+#define HSH &kp HASH
+#define DLR &kp DOLLAR
+#define PCT &kp PERCENT
+#define CRT &kp CARET
+#define UND &kp UNDERSCORE
+#define PIP &kp PIPE
+#define GRV &kp GRAVE
+#define TLD &kp TILDE
+#define BSH &kp BSLH
+#define BSP &kp BSPC
+#define FSH &kp FSLH // slash
+#define NBS &kp NUBS // non-US backslash
+#define _PR &kp LPAR
+#define PR_ &kp RPAR
+#define _BK &kp LBKT
+#define BK_ &kp RBKT
+#define _BC &kp LBRC
+#define BC_ &kp RBRC
+#define _FG &kp _A(NBS) // left french guillemet
+#define FG_ &kp _S(_A(NBS)) // right french guillemet
 
-#define K0 KP_N0
-#define K1 KP_N1
-#define K2 KP_N2
-#define K3 KP_N3
-#define K4 KP_N4
-#define K5 KP_N5
-#define K6 KP_N6
-#define K7 KP_N7
-#define K8 KP_N8
-#define K9 KP_N9
-#define KPS KP_PLUS
-#define KMS KP_MINUS
-#define KMP KP_MULTIPLY
-#define KDV KP_DIVIDE
+#define K0 &kp KP_N0
+#define K1 &kp KP_N1
+#define K2 &kp KP_N2
+#define K3 &kp KP_N3
+#define K4 &kp KP_N4
+#define K5 &kp KP_N5
+#define K6 &kp KP_N6
+#define K7 &kp KP_N7
+#define K8 &kp KP_N8
+#define K9 &kp KP_N9
+#define KPS &kp KP_PLUS
+#define KMS &kp KP_MINUS
+#define KMP &kp KP_MULTIPLY
+#define KDV &kp KP_DIVIDE
 
-#define F_0 F10
-#define F_A F11
-#define F_B F12
-#define F_C F13
-#define F_D F12
-#define F_E F14
-#define F_F F15
+#define F_0 &kp F10
+#define F_A &kp F11
+#define F_B &kp F12
+#define F_C &kp F13
+#define F_D &kp F12
+#define F_E &kp F14
+#define F_F &kp F15
 
-#define HOM HOME
-#define PUP PG_UP
-#define PDN PG_DN
-#define DWN DOWN
-#define RGT RIGHT
-#define LFT LEFT
+#define HOM &kp HOME
+#define PUP &kp PG_UP
+#define PDN &kp PG_DN
+#define DWN &kp DOWN
+#define RGT &kp RIGHT
+#define LFT &kp LEFT
 
-#define _S LSHFT
-#define _C LCTRL
-#define _A LALT
-#define _M LGUI
-#define S_ RSHFT
-#define C_ RCTRL
-#define A_ RALT
-#define M_ RGUI
-#define CPS CAPS
+#define _S &kp LSHFT
+#define _C &kp LCTRL
+#define _A &kp LALT
+#define _M &kp LGUI
+#define S_ &kp RSHFT
+#define C_ &kp RCTRL
+#define A_ &kp RALT
+#define M_ &kp RGUI
+#define CPS &kp CAPS
 
-#define MPP C_PLAY_PAUSE
-#define M_P C_PREV // play previous track
-#define MP_ C_NEXT // play next track
-#define M_V LEFT // jump back 5 seconds in YouTube video
-#define MV_ RIGHT // jump ahead 5 seconds in YouTube video
-#define M_X J // jump back 10 seconds in YouTube video
-#define MX_ L // jump ahead 10 seconds in YouTube video
-#define M_C LA(LEFT) // previous chapter in YouTube video
-#define MC_ LA(RIGHT) // next chapter in YouTube video
-#define M_S COMMA	// slower in Youtube video
-#define MS_ PERIOD	// faster in Youtube video
+#define MPP &kp C_PLAY_PAUSE
+#define M_P &kp C_PREV // play previous track
+#define MP_ &kp C_NEXT // play next track
+#define M_V &kp LEFT // jump back 5 seconds in YouTube video
+#define MV_ &kp RIGHT // jump ahead 5 seconds in YouTube video
+#define M_X &kp J // jump back 10 seconds in YouTube video
+#define MX_ &kp L // jump ahead 10 seconds in YouTube video
+#define M_C &kp LA(LEFT) // previous chapter in YouTube video
+#define MC_ &kp LA(RIGHT) // next chapter in YouTube video
+#define M_S &kp COMMA	// slower in Youtube video
+#define MS_ &kp PERIOD	// faster in Youtube video
 
 #define BTP &bt BT_PRV
 #define BTN &bt BT_NXT
@@ -93,7 +93,7 @@
 #define BT4 &bt BT_SEL 4
 // #define EQL EQUAL // possible doublon makes build crash
 
-#define SLP C_SLEEP
+#define SLP &kp C_SLEEP
 
 // DIACRITICS
 // Macros
