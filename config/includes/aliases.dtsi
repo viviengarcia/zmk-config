@@ -124,12 +124,12 @@
 #define SU_TRM &digraph DQT _S(U) // ck_label="Ü"
 #define Y_TRM &digraph DQT Y // ck_label="ÿ"
 #define SY_TRM &digraph DQT _S(Y) // ck_label="Ÿ"
-#define C_CED &digraph _A(C) // ck_label="ç"
-#define SC_CED &digraph _A(_S(C)) // ck_label="Ç"
-#define AE &digraph _A(SQT) // ck_label="æ"
-#define S_AE &digraph _A(_S(SQT)) // ck_label="Æ"
-#define OE &digraph _A(Q) // ck_label="œ"
-#define S_OE &digraph _S(_A(Q)) // ck_label="Œ"
+#define C_CED &kp _A(C) // ck_label="ç"
+#define SC_CED &kp _A(_S(C)) // ck_label="Ç"
+#define AE &kp _A(SQT) // ck_label="æ"
+#define S_AE &kp _A(_S(SQT)) // ck_label="Æ"
+#define OE &kp _A(Q) // ck_label="œ"
+#define S_OE &kp _S(_A(Q)) // ck_label="Œ"
 
 
 // BEHAVIORS
