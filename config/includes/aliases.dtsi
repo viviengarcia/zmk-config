@@ -1,6 +1,16 @@
 #define ___ &trans
 #define XXX &none
 
+#define _S LSHFT
+#define _C LCTRL
+#define _A LALT
+#define _M LGUI
+#define S_ RSHFT
+#define C_ RCTRL
+#define A_ RALT
+#define M_ RGUI
+#define CPS CAPS
+
 #define CM COMMA
 #define SMC SEMI // semicolon
 #define CLN COLON
@@ -59,16 +69,6 @@
 #define RGT RIGHT
 #define LFT LEFT
 
-#define _S LSHFT
-#define _C LCTRL
-#define _A LALT
-#define _M LGUI
-#define S_ RSHFT
-#define C_ RCTRL
-#define A_ RALT
-#define M_ RGUI
-#define CPS CAPS
-
 #define MPP C_PLAY_PAUSE
 #define M_P C_PREV // play previous track
 #define MP_ C_NEXT // play next track
@@ -95,43 +95,43 @@
 
 // SYMBOLS & DIACRITICS
 //
-#define _FG _A(NBS) // left french guillemet
-#define FG_ _S(_A(NBS)) // right french guillemet
+#define _FG LA(NUBS) // left french guillemet
+#define FG_ LS(LA(NUBS)) // right french guillemet
 
 #define A_GRV &digraph GRV A // ck_label="à"
-#define SA_GRV &digraph GRV _S(A) // ck_label="À"
+#define SA_GRV &digraph GRV LS(A) // ck_label="À"
 #define A_CIR &digraph CRT A // ck_label="â"
-#define SA_CIR &digraph CRT _S(A) // ck_label="Â"
+#define SA_CIR &digraph CRT LS(A) // ck_label="Â"
 #define E_ACU &digraph SQT E // ck_label="é"
-#define SE_ACU &digraph SQT _S(E) // ck_label="É"
+#define SE_ACU &digraph SQT LS(E) // ck_label="É"
 #define E_GRV &digraph GRV E // ck_label="è"
-#define SE_GRV &digraph GRV _S(E) // ck_label="È"
+#define SE_GRV &digraph GRV LS(E) // ck_label="È"
 #define E_CIR &digraph CRT E // ck_label="ê"
-#define SE_CIR &digraph CRT _S(E) // ck_label="Ê"
+#define SE_CIR &digraph CRT LS(E) // ck_label="Ê"
 #define E_TRM &digraph DQT E // ck_label="ë"
-#define SE_TRM &digraph DQT _S(E) // ck_label="Ë"
+#define SE_TRM &digraph DQT LS(E) // ck_label="Ë"
 #define I_CIR &digraph CRT I // ck_label="î"
-#define SI_CIR &digraph CRT _S(I) // ck_label="Î"
+#define SI_CIR &digraph CRT LS(I) // ck_label="Î"
 #define I_TRM &digraph DQT I // ck_label="ï"
-#define SI_TRM &digraph DQT _S(I) // ck_label="Ï"
+#define SI_TRM &digraph DQT LS(I) // ck_label="Ï"
 #define O_CIR &digraph CRT O // ck_label="ô"
-#define SO_CIR &digraph CRT _S(O) // ck_label="Ô"
+#define SO_CIR &digraph CRT LS(O) // ck_label="Ô"
 #define O_TRM &digraph DQT O // ck_label="ö"
-#define SO_TRM &digraph DQT _S(O) // ck_label="Ö"
+#define SO_TRM &digraph DQT LS(O) // ck_label="Ö"
 #define U_GRV &digraph GRV U // ck_label="ù"
-#define SU_GRV &digraph GRV _S(U) // ck_label="Ù"
+#define SU_GRV &digraph GRV LS(U) // ck_label="Ù"
 #define U_CIR &digraph CRT U // ck_label="û"
-#define SU_CIR &digraph CRT _S(U) // ck_label="Û"
+#define SU_CIR &digraph CRT LS(U) // ck_label="Û"
 #define U_TRM &digraph DQT U // ck_label="ü"
-#define SU_TRM &digraph DQT _S(U) // ck_label="Ü"
+#define SU_TRM &digraph DQT LS(U) // ck_label="Ü"
 #define Y_TRM &digraph DQT Y // ck_label="ÿ"
-#define SY_TRM &digraph DQT _S(Y) // ck_label="Ÿ"
-#define C_CED _A(C) // ck_label="ç"
-#define SC_CED _A(_S(C)) // ck_label="Ç"
-#define AE _A(SQT) // ck_label="æ"
-#define S_AE _A(_S(SQT)) // ck_label="Æ"
-#define OE _A(Q) // ck_label="œ"
-#define S_OE _S(_A(Q)) // ck_label="Œ"
+#define SY_TRM &digraph DQT LS(Y) // ck_label="Ÿ"
+#define C_CED LA(C) // ck_label="ç"
+#define SC_CED LS(LA(C)) // ck_label="Ç"
+#define AE LA(SQT) // ck_label="æ"
+#define S_AE LS(LA(SQT)) // ck_label="Æ"
+#define OE LA(Q) // ck_label="œ"
+#define S_OE LS(LA(Q)) // ck_label="Œ"
 
 
 // BEHAVIORS
@@ -142,7 +142,7 @@
 #define RPT &key_repeat
 
 #define TAB_SYS &lc_tp_ht 6 TAB // h: SYSTEM layer, t: TAB
-#define BAT_DVC &lc_tp_ht 7 _S(TAB) // h: DEVICE layer, t: &key_repeat
+#define BAT_DVC &lc_tp_ht 7 LS(TAB) // h: DEVICE layer, t: &key_repeat
 
 #define NAV_SPC &lc_hpp_ht 3 SPC // h: NAVIGATION, t: Space
 
